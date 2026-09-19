@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/main.jsx --bundle --minify --outfile=assets/app.js --loader:.js=jsx && tailwindcss -i ./src/index.css -o ./assets/app.css --minify",
+    "watch": "esbuild src/main.jsx --bundle --outfile=assets/app.js --loader:.js=jsx --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matamba29/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matamba29/portfolio/issues"
+  },
+  "homepage": "https://github.com/matamba29/portfolio#readme",
+  "dependencies": {
+    "lucide-react": "^0.263.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "tailwindcss": "^3.4.19"
+  }
+}
